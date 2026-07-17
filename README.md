@@ -34,8 +34,6 @@
   </tr>
 </table>
 
-`jumping` 是 Codex 的固定状态名；本项目将该状态显示为捧腹大笑。
-
 ## 注视方向
 
 <p align="center">

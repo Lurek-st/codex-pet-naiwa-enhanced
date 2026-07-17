@@ -34,8 +34,6 @@ Send this instruction to Codex:
   </tr>
 </table>
 
-`jumping` is the fixed Codex state name; this pet displays it as a belly laugh.
-
 ## Look Directions
 
 <p align="center">
