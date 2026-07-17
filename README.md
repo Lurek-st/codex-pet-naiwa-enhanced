@@ -12,7 +12,7 @@
 
 将下面这句话发送给 Codex：
 
-> 请帮我安装这个 Codex 奶蛙桌宠：https://github.com/timerring/codex-pet-naiwa，将 `naifrog` 文件夹复制到我的自定义宠物目录，并告诉我如何刷新和启用它。
+> 请帮我安装这个 Codex 奶蛙桌宠：<https://github.com/timerring/codex-pet-naiwa>，将 `naifrog` 文件夹复制到我的自定义宠物目录，并告诉我如何刷新和启用它。
 
 ## 动画预览
 
