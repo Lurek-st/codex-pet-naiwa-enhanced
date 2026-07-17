@@ -93,7 +93,7 @@ naifrog/
 1. Download or clone this repository:
 
    ```bash
-   git clone https://github.com/Nitrogen216/awesome_pets.git
+   git clone https://github.com/timerring/codex-pet-naiwa.git
    ```
 
 2. Open the Codex App and go to **Settings → Pets → Custom pets**.
@@ -111,37 +111,38 @@ The final layout must be:
     └── spritesheet.webp
 ```
 
-Do not copy the entire `awesome_pets` repository as a nested folder under `pets`; the Codex App looks for `pet.json` directly inside each pet directory.
+Do not copy the entire `codex-pet-naiwa` repository as a nested folder under `pets`; the Codex App looks for `pet.json` directly inside each pet directory.
 
 ### Option 2: Install from a terminal
 
 #### macOS or Linux
 
 ```bash
-git clone https://github.com/Nitrogen216/awesome_pets.git
+git clone https://github.com/timerring/codex-pet-naiwa.git
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets/naifrog"
-cp -R awesome_pets/naifrog/. "${CODEX_HOME:-$HOME/.codex}/pets/naifrog/"
+cp -R codex-pet-naiwa/naifrog/. "${CODEX_HOME:-$HOME/.codex}/pets/naifrog/"
 ```
 
 #### Windows PowerShell
 
 ```powershell
-git clone https://github.com/Nitrogen216/awesome_pets.git
+git clone https://github.com/timerring/codex-pet-naiwa.git
 $codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $HOME ".codex" }
 $petDir = Join-Path $codexHome "pets\naifrog"
 New-Item -ItemType Directory -Force $petDir | Out-Null
-Copy-Item ".\awesome_pets\naifrog\*" $petDir -Recurse -Force
+Copy-Item ".\codex-pet-naiwa\naifrog\*" $petDir -Recurse -Force
 ```
 
 After copying the files, open **Settings → Pets** and select **Refresh**, then choose Nai Frog. Restart the Codex App if the pet does not appear after refreshing.
 
 By default, Codex home is `~/.codex` on macOS and Linux and `$HOME\.codex` on Windows. If `CODEX_HOME` is set, the App uses that location instead.
 
-## Asset Credits
+## Credits
 
-The five keyframes used for Nai Frog's belly laugh in the `jumping` slot were adapted from the transparent frame sequence in [LynnShaw/naiwa-pet](https://github.com/LynnShaw/naiwa-pet). That project is a standalone Tauri desktop pet and is separate from this Codex pet package.
+- [Nitrogen216/awesome_pets](https://github.com/Nitrogen216/awesome_pets) — the original Awesome Pets repository and Nai Frog Codex pet implementation on which this project is based.
+- [LynnShaw/naiwa-pet](https://github.com/LynnShaw/naiwa-pet) — the source of the transparent belly-laugh frame sequence adapted for Nai Frog's `jumping` state.
 
-The upstream repository currently does not include a license file. Review the upstream terms or obtain permission before redistributing the adapted media.
+The `LynnShaw/naiwa-pet` repository currently does not include a license file. Review its terms or obtain permission before redistributing the adapted media.
 
 ## What's Next
 

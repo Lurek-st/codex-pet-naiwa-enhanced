@@ -93,7 +93,7 @@ naifrog/
 1. 下载或克隆本仓库：
 
    ```bash
-   git clone https://github.com/Nitrogen216/awesome_pets.git
+   git clone https://github.com/timerring/codex-pet-naiwa.git
    ```
 
 2. 打开 Codex App，进入 **Settings → Pets → Custom pets**。
@@ -111,37 +111,38 @@ naifrog/
     └── spritesheet.webp
 ```
 
-不要把整个 `awesome_pets` 仓库作为嵌套文件夹复制到 `pets` 中；Codex App 会直接在每个宠物目录下查找 `pet.json`。
+不要把整个 `codex-pet-naiwa` 仓库作为嵌套文件夹复制到 `pets` 中；Codex App 会直接在每个宠物目录下查找 `pet.json`。
 
 ### 方法二：通过终端安装
 
 #### macOS 或 Linux
 
 ```bash
-git clone https://github.com/Nitrogen216/awesome_pets.git
+git clone https://github.com/timerring/codex-pet-naiwa.git
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets/naifrog"
-cp -R awesome_pets/naifrog/. "${CODEX_HOME:-$HOME/.codex}/pets/naifrog/"
+cp -R codex-pet-naiwa/naifrog/. "${CODEX_HOME:-$HOME/.codex}/pets/naifrog/"
 ```
 
 #### Windows PowerShell
 
 ```powershell
-git clone https://github.com/Nitrogen216/awesome_pets.git
+git clone https://github.com/timerring/codex-pet-naiwa.git
 $codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $HOME ".codex" }
 $petDir = Join-Path $codexHome "pets\naifrog"
 New-Item -ItemType Directory -Force $petDir | Out-Null
-Copy-Item ".\awesome_pets\naifrog\*" $petDir -Recurse -Force
+Copy-Item ".\codex-pet-naiwa\naifrog\*" $petDir -Recurse -Force
 ```
 
 复制完成后，请进入 **Settings → Pets**，点击 **Refresh** 并选择奶蛙。如果刷新后仍未出现，请重启 Codex App。
 
 默认情况下，macOS 和 Linux 的 Codex 主目录是 `~/.codex`，Windows 中是 `$HOME\.codex`。如果设置了 `CODEX_HOME`，App 将使用该位置。
 
-## 素材来源
+## Credits / 致谢
 
-奶蛙 `jumping` 槽位中捧腹大笑的 5 个关键帧，改编自 [LynnShaw/naiwa-pet](https://github.com/LynnShaw/naiwa-pet) 提供的透明动画帧序列。该项目是一个独立的 Tauri 桌面宠物，与本 Codex 宠物资源包相互独立。
+- [Nitrogen216/awesome_pets](https://github.com/Nitrogen216/awesome_pets) — 本项目所基于的原始 Awesome Pets 仓库及奶蛙 Codex 桌宠实现。
+- [LynnShaw/naiwa-pet](https://github.com/LynnShaw/naiwa-pet) — 奶蛙 `jumping` 状态中捧腹大笑透明动画帧序列的来源。
 
-上游仓库目前没有提供许可证文件；公开分发改编素材前，请确认上游条款或取得作者许可。
+`LynnShaw/naiwa-pet` 仓库目前没有提供许可证文件；公开分发改编素材前，请确认其条款或取得作者许可。
 
 ## 接下来
 
