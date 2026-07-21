@@ -1,0 +1,25 @@
+# Local build, extraction, signing, and verification output.
+work/
+
+# Generated packages and signing material must be published separately, never
+# committed to the source repository.
+*.msix
+*.appx
+*.msixbundle
+*.pfx
+*.cer
+*.key
+*.pem
+
+# Local dependency/runtime caches.
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Logs and operating-system metadata.
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
